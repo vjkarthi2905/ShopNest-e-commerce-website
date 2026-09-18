@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNest - Online Shopping</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    >
+
+    <!-- Google Font -->
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" 
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    Shop<span>Nest</span>
+                </a>
+
+                <!-- Mobile menu button -->
+                <button 
+                    class="navbar-toggler" 
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#categories">Categories</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deals">Deals</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-right">
+
+                        <form class="search">
+                            <input 
+                                type="search" 
+                                placeholder="Search products..."
+                            >
+
+                            <button type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+
+                        <a href="#" class="cart">
+                            <i class="bi bi-cart3"></i>
+                            <span>3</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <div class="hero-bg"></div>
+
+        <div class="container">
+            <div class="hero-content">
+
+                <p>New season arrivals are here</p>
+
+                <h1>
+                    Everything you need,
+                    <br>
+                    delivered to your door
+                </h1>
+
+                <p>
+                    Shop electronics, clothing, footwear and books
+                    at great prices.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="btn shop-btn">
+                        Shop Now
+                    </a>
+
+                    <a href="#deals" class="btn deal-btn">
+                        View Deals
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="products" id="products">
+
+        <div class="container">
+
+            <div class="heading">
+                <h2>Featured Products</h2>
+                <p>Popular products our customers love</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Product 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card">
+
+                        <div class="card-img">
+                            <img 
+                                src="https://picsum.photos/seed/shopnest-headphones/400/300"
+                                alt="Wireless headphones"
+                            >
+
+                            <span>-30%</span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>Wireless Over-Ear Headphones</h3>
+
+                            <div class="stars">
+                                ★★★★☆
+                                <small>(214)</small>
+                            </div>
+
+                            <div class="price">
+                                <del>₹4,999</del>
+                                <strong>₹3,499</strong>
+                            </div>
+
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card">
+
+                        <div class="card-img">
+                            <img 
+                                src="https://picsum.photos/seed/shopnest-shirt/400/300"
+                                alt="Cotton shirt"
+                            >
+
+                            <span>-20%</span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>Men's Casual Cotton Shirt</h3>
+
+                            <div class="stars">
+                                ★★★★½
+                                <small>(98)</small>
+                            </div>
+
+                            <div class="price">
+                                <del>₹1,499</del>
+                                <strong>₹1,199</strong>
+                            </div>
+
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card">
+
+                        <div class="card-img">
+                            <img 
+                                src="https://picsum.photos/seed/shopnest-sneakers/400/300"
+                                alt="Running sneakers"
+                            >
+
+                            <span>-15%</span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>Lightweight Running Sneakers</h3>
+
+                            <div class="stars">
+                                ★★★★★
+                                <small>(340)</small>
+                            </div>
+
+                            <div class="price">
+                                <del>₹3,299</del>
+                                <strong>₹2,799</strong>
+                            </div>
+
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card">
+
+                        <div class="card-img">
+                            <img 
+                                src="https://picsum.photos/seed/shopnest-watch/400/300"
+                                alt="Smart watch"
+                            >
+
+                            <span>-25%</span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>Smart Watch with Fitness Tracker</h3>
+
+                            <div class="stars">
+                                ★★★★☆
+                                <small>(176)</small>
+                            </div>
+
+                            <div class="price">
+                                <del>₹5,999</del>
+                                <strong>₹4,499</strong>
+                            </div>
+
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 5 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card">
+
+                        <div class="card-img">
+                            <img 
+                                src="https://picsum.photos/seed/shopnest-backpack/400/300"
+                                alt="Travel backpack"
+                            >
+
+                            <span>-10%</span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>Water-Resistant Travel Backpack</h3>
+
+                            <div class="stars">
+                                ★★★★½
+                                <small>(87)</small>
+                            </div>
+
+                            <div class="price">
+                                <del>₹2,199</del>
+                                <strong>₹1,979</strong>
+                            </div>
+
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 6 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card">
+
+                        <div class="card-img">
+                            <img 
+                                src="https://picsum.photos/seed/shopnest-novel/400/300"
+                                alt="Fiction novel"
+                            >
+
+                            <span>-40%</span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>Bestselling Fiction Novel</h3>
+
+                            <div class="stars">
+                                ★★★★½
+                                <small>(452)</small>
+                            </div>
+
+                            <div class="price">
+                                <del>₹499</del>
+                                <strong>₹299</strong>
+                            </div>
+
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+
+        <div class="container">
+
+            <div class="heading">
+                <h2>Shop by Category</h2>
+                <p>Find what you are looking for</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-6 col-lg-3">
+                    <a href="#" class="category">
+                        <img 
+                            src="https://picsum.photos/seed/shopnest-electronics/300/300"
+                            alt="Electronics"
+                        >
+
+                        <div>
+                            <i class="bi bi-laptop"></i>
+                            <p>Electronics</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-lg-3">
+                    <a href="#" class="category">
+                        <img 
+                            src="https://picsum.photos/seed/shopnest-clothing/300/300"
+                            alt="Clothing"
+                        >
+
+                        <div>
+                            <i class="bi bi-bag-heart"></i>
+                            <p>Clothing</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-lg-3">
+                    <a href="#" class="category">
+                        <img 
+                            src="https://picsum.photos/seed/shopnest-footwear/300/300"
+                            alt="Footwear"
+                        >
+
+                        <div>
+                            <i class="bi bi-boot"></i>
+                            <p>Footwear</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-lg-3">
+                    <a href="#" class="category">
+                        <img 
+                            src="https://picsum.photos/seed/shopnest-books/300/300"
+                            alt="Books"
+                        >
+
+                        <div>
+                            <i class="bi bi-book"></i>
+                            <p>Books</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Deals -->
+    <section class="deals" id="deals">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <h2>
+                        This week's deal: up to 40% off electronics
+                    </h2>
+
+                    <p>
+                        Limited stock on selected headphones,
+                        watches and speakers.
+                    </p>
+
+                    <a href="#products" class="btn shop-btn">
+                        See All Deals
+                    </a>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="timer">
+
+                        <p>Offer ends in</p>
+
+                        <div class="time">
+                            <div>
+                                <strong>02</strong>
+                                <small>Days</small>
+                            </div>
+
+                            <div>
+                                <strong>14</strong>
+                                <small>Hours</small>
+                            </div>
+
+                            <div>
+                                <strong>36</strong>
+                                <small>Mins</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <div class="container">
+
+            <div class="news-box">
+
+                <div>
+                    <h2>Get 10% off your first order</h2>
+
+                    <p>
+                        Sign up for new arrivals and special deals.
+                    </p>
+                </div>
+
+                <form>
+                    <input 
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <h4>About ShopNest</h4>
+
+                    <p>
+                        ShopNest is an online store for electronics,
+                        clothing, footwear and books.
+                    </p>
+
+                </div>
+
+
+                <div class="col-6 col-md-3 col-lg-3">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Shop</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-6 col-md-3 col-lg-3">
+
+                    <h4>Contact</h4>
+
+                    <ul>
+                        <li>Bengaluru, Karnataka</li>
+                        <li>support@shopnest.com</li>
+                        <li>+91 98765 43210</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <h4>Follow Us</h4>
+
+                    <div class="social">
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+                © 2026 ShopNest. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
